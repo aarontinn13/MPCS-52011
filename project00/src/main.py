@@ -7,9 +7,7 @@ file = sys.argv[-1]
 #get the path of the file
 path = os.path.dirname(file)
 
-print('path: ', path)
+print(path)
 
-'''
-with open(path, 'r') as r:
+with open('../src/test.txt', 'r') as r:
     print(r.read())
-'''
