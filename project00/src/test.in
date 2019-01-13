@@ -1,10 +1,20 @@
-half of this //comment should go
-//This entire row should go
+/* Draws a rectangle at the top-left corner of the screen.
+   The rectangle is 16 pixels wide and R0 pixels high */
 
-/*This entire row should go*/
+(KBDLOOP)
+    @KBD    //loop until key pressed
+    D=M
+    #KBDLOOP
+    D;JEQ
 
-Part /*of this comment*/ should go
+    @50 //setup: rect will be 50 high
+    D=A
+    @R0
 
-This /*multiline
-comment needs to be
-figured out holy*/ hell
+
+//this is a comment
+this is // a comment
+/*this is a comment*/
+this /*is a*/ comment
+this /*is
+a */comment

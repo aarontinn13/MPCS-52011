@@ -3,21 +3,17 @@ import os
 
 #get file name
 file = sys.argv[-1]
+newfile = file.partition('.')
 
 #get the path of the file
 path = os.path.abspath(file)
 
-print("path:", path)
-print(type(path))
+with open(path, 'r') as r:
+    with open('{}.out'.format(newfile[0]),'w') as w:
 
-
-
-
-
-#replace with path when you are done
-with open('test.in', 'r') as r:
-    with open('write.out','w') as w:
+        #marker for multiline comments
         flag = False
+
         for i in r.readlines():
 
             #skip blank lines
@@ -30,35 +26,42 @@ with open('test.in', 'r') as r:
             #remove "//" comments
             single = no_space.partition('//')
             new = single[0]
+
+            #if this single line comment was the entire row
             if new == '':
                 continue
-            print(new)
 
-            #remove /* and */ from one line
-
+            #if both '/*' and '*/' are in the line
             if '/*' in new:
                 first = new.partition('/*')
-                print('first:',first[0])
+
                 if '*/' in first[2]:
                     second = first[2].partition('*/')
-                    print('second:', second[2])
+
                     if first[0]+second[2] == '':
-                        print('this is blank')
                         continue
+
                     else:
                         w.write(first[0] + second[2] + '\n')
                         continue
 
-
+                #only '/*' is present on the line
                 else:
+                    if first[0] == '':
+                        continue
                     w.write(first[0]+'\n')
-                    #mark that we are waiting for closing comment
-                    flag = True
+                    flag = True #mark that we are waiting for closing comment
                     continue
 
+
             if '*/' in new:
-                flag = False
+
+                flag = False #unmark that we have closed the comment
                 final = new.partition('*/')
+
+                if final[2] == '':
+                    continue
+
                 w.write(final[2]+'\n')
                 continue
 
