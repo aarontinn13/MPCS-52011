@@ -11,61 +11,79 @@ path = os.path.abspath(file)
 with open(path, 'r') as r:
     with open('{}.out'.format(newfile[0]),'w') as w:
 
-        #marker for multiline comments
         flag = False
 
         for i in r.readlines():
 
-            #skip blank lines
+            found = False
+
+            #remove all blank lines
             if i == '\n':
                 continue
 
-            #remove spaces from lines
-            no_space = ''.join(i.split())
+            #remove all white space from the line
+            new = ''.join(i.split())
 
-            #remove "//" comments
-            single = no_space.partition('//')
-            new = single[0]
+            #initial parse to find comments
+            for j in range(0,len(new)-1):
 
-            #if this single line comment was the entire row
-            if new == '':
-                continue
+                #if we are still looking for the ending multiline comment
+                if flag:
+                    if new[j] + new[j+1] == '*/':
+                        flag = False
+                        found = True
+                        end = new.partition('*/')
+                        if end[2] == '':
+                            break
+                        else:
+                            w.write(end[2]+'\n')
+                            break
 
-            #if both '/*' and '*/' are in the line
-            if '/*' in new:
-                first = new.partition('/*')
+                #if we find multiline starter
+                elif new[j] + new[j+1] == '/*':
 
-                if '*/' in first[2]:
-                    second = first[2].partition('*/')
+                    found = True
+                    left = new.partition('/*')
 
-                    if first[0]+second[2] == '':
-                        continue
+                    #find if ending comment in the same line
+                    if '*/' in left[2]:
 
+                        #partition around the ending comment
+                        right = left[2].partition('*/')
+
+                        #combine the two none comments
+                        combined = left[0]+right[2]
+
+                        #if the whole line was a comment we skip to next line
+                        if combined == '':
+                            break
+
+                        #write the non comment and skip to next line
+                        else:
+                            w.write(combined+'\n')
+                            break
+
+                    #if the ending comment is not on the same line, we need to keep a flag to indicate multiline comment
                     else:
-                        w.write(first[0] + second[2] + '\n')
-                        continue
+                        flag = True
+                        if left[0] == '':
+                            break
+                        else:
+                            w.write(left[0]+'\n')
+                            break
 
-                #only '/*' is present on the line
-                else:
-                    if first[0] == '':
-                        continue
-                    w.write(first[0]+'\n')
-                    flag = True #mark that we are waiting for closing comment
-                    continue
+                #if we find singleline starter
+                elif new[j] + new[j+1] == '//':
+                    found = True
 
+                    single = new.partition('//')
 
-            if '*/' in new:
+                    if single[0] == '':
+                        break
+                    else:
+                        w.write(single[0]+'\n')
+                        break
 
-                flag = False #unmark that we have closed the comment
-                final = new.partition('*/')
-
-                if final[2] == '':
-                    continue
-
-                w.write(final[2]+'\n')
-                continue
-
-            if flag == True:
-                continue
-            else:
+            #if we find no comments in the string
+            if not found and not flag:
                 w.write(new+'\n')
