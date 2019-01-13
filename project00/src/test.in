@@ -1,0 +1,10 @@
+half of this //comment should go
+//This entire row should go
+
+/*This entire row should go*/
+
+Part /*of this comment*/ should go
+
+This /*multiline
+comment needs to be
+figured out holy*/ hell
