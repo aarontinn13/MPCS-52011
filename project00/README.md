@@ -10,7 +10,7 @@ python main.py <filename>.in
 
 After this is run, another file named <filename>.out should appear in the same directory as main.py
 
-
+The __init__.py files can be ignored as they make it so I can import the module if need be.
 
 
 Given an example:
