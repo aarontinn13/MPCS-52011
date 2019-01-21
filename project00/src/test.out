@@ -1,0 +1,10 @@
+Thisisacomment
+withoutwastingmytime
+(KBDLOOP)
+@KBD
+D=M
+@KBDLOOP
+D;JEQ
+@50
+D=A
+@R0
