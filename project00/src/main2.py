@@ -14,4 +14,8 @@ with open(path, 'r') as r:
         #flag = False
 
         for i in r.readlines():
-            print(i)
+            counts = {'/*':0, '*/':0, '//'}
+
+            for j in range(0, len(i)-1):
+                if i[j]+i[j+1] == '/*':
+                    counts
