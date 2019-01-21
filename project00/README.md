@@ -1,16 +1,21 @@
 Project 00
 
-The purpose of this README is to explain the repository and the algorithm.
+The purpose of this README is to explain the repository and the algorithm:
 
+I am running this through Linux Ubuntu 16.04
 The main algorithm is located in main.py and will remove all whitespace and comments from a given text file.
 
 To initiate the algorithm, you can call it in a Bash terminal by:
 
 python main.py <filename>.in
+python main.py <path of file>
 
 After this is run, another file named <filename>.out should appear in the same directory as main.py
 
 The __init__.py files can be ignored as they make it so I can import the module if need be.
+
+
+
 
 
 Given an example:
@@ -41,6 +46,8 @@ this is // a comment
 this /*is a*/ comment
 this /*is
 a */comment
+
+
 
 
 
