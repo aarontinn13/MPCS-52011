@@ -45,13 +45,14 @@ with open('nocomments.out', 'r+') as r:
         # delete lines in .asm file
         r.seek(0)
         r.truncate(0)
-
+        count = 0
         # first pass to remove jump indexes from .asm and store in the table.
         for i, j in enumerate(lines):
             if j[0] != '(':
                 r.write(j)
             else:
-                symbol_table[j[1:-2]] = i
+                symbol_table[j[1:-2]] = i-count
+                count += 1
 
         # reposition
         r.seek(0)
