@@ -25,7 +25,6 @@ compute = {}
 
 # get file name of the .asm file
 file = sys.argv[-1]
-
 name = file.partition('.')[0]
 
 # get the path of the file
@@ -73,14 +72,6 @@ with open('nocomments.out', 'r+') as r:
                 # get binary representation of A instruction
                 number = bin(number).partition('b')[2].zfill(16)
 
-                word = i[1:]
-                # need to check if A instruction is a keyword to look up in table
-                if word.isalpha():
-                    number = symbol_table[word]
-
-                # get binary representation of A instruction
-                number = bin(int(word)).partition('b')[2].zfill(16)
-
                 w.write('{}\n'.format(number))
                 continue
 
@@ -94,9 +85,6 @@ with open('nocomments.out', 'r+') as r:
                     comp = '001100'
 
                 j = j[2][:-1]
-
-                j = j[2]
-
                 jj = jump[j]
 
                 w.write('1110{}000{}\n'.format(comp, jj))
