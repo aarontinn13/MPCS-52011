@@ -3,6 +3,7 @@ import os
 from comments import stripcomments
 
 # create the initial symbol table
+
 symbol_table = {'SP': '0', 'LCL': '1', 'ARG': '2', 'THIS': '3', 'THAT': '4', 'R0': '0', 'R1': '1', 'R2': '2', 'R3': '3',
                 'R4': '4','R5': '5', 'R6': '6', 'R7': '7', 'R8': '8', 'R9': '9', 'R10': '10', 'R11': '11', 'R12': '12',
                 'R13': '13', 'R14': '14','R15': '15'}
@@ -61,6 +62,7 @@ with open('nocomments.out', 'r+') as r:
 
             # find the A instructions, translate, then write
             if '@' in i:
+
                 word = i[1:-1]
 
                 # need to check if A instruction is a keyword to look up in table
@@ -70,6 +72,15 @@ with open('nocomments.out', 'r+') as r:
                 number = int(word)
                 # get binary representation of A instruction
                 number = bin(number).partition('b')[2].zfill(16)
+
+                word = i[1:]
+                # need to check if A instruction is a keyword to look up in table
+                if word.isalpha():
+                    number = symbol_table[word]
+
+                # get binary representation of A instruction
+                number = bin(int(word)).partition('b')[2].zfill(16)
+
                 w.write('{}\n'.format(number))
                 continue
 
@@ -81,7 +92,11 @@ with open('nocomments.out', 'r+') as r:
                     comp = '101010'
                 else:
                     comp = '001100'
+
                 j = j[2][:-1]
+
+                j = j[2]
+
                 jj = jump[j]
 
                 w.write('1110{}000{}\n'.format(comp, jj))
@@ -105,6 +120,10 @@ with open('nocomments.out', 'r+') as r:
                         location += 4
 
                 location = bin(location).partition('b')[2].zfill(3)
+
+                # right side of equation
+                comp = C[2]
+
 
                 # right side of equation
                 comp = C[2][:-1]
