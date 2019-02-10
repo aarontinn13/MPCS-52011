@@ -56,6 +56,8 @@ with open('nocomments.out', 'r+') as r:
 
         # reposition
         r.seek(0)
+        # counter starts at 16, if we encounter a new key we start at 17
+        start = 17
 
         # second pass to translate
         for i in r.readlines():
@@ -68,12 +70,17 @@ with open('nocomments.out', 'r+') as r:
                 # need to check if A instruction is a keyword to look up in table
                 if word in symbol_table:
                     word = symbol_table[word]
+
+                #if not we need to create it starting at address 17
                 else:
-                    #counter starts at 16, we create a new key starting at 17
-                    start = 17
-                    symbol_table[word] = str(start)
-                    word = symbol_table[word]
-                    start += 1
+                    #if the @ instruction is a number we can ignore
+                    if word.isdigit():
+                        pass
+                    #if the @ instruction contains alpha
+                    else:
+                        symbol_table[word] = str(start)
+                        word = symbol_table[word]
+                        start += 1
 
                 number = int(word)
                 # get binary representation of A instruction
