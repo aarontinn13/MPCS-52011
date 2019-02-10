@@ -6,7 +6,7 @@ from comments import stripcomments
 
 symbol_table = {'SP': '0', 'LCL': '1', 'ARG': '2', 'THIS': '3', 'THAT': '4', 'R0': '0', 'R1': '1', 'R2': '2', 'R3': '3',
                 'R4': '4','R5': '5', 'R6': '6', 'R7': '7', 'R8': '8', 'R9': '9', 'R10': '10', 'R11': '11', 'R12': '12',
-                'R13': '13', 'R14': '14','R15': '15'}
+                'R13': '13', 'R14': '14','R15': '15', 'counter': '16', 'KBD':'24575', 'SCREEN': '16384'}
 
 # create the jump table
 jump = {'null': '000', 'JGT': '001', 'JEQ': '010', 'JGE': '011', 'JLT': '100', 'JNE': '101', 'JLE': '110', 'JMP': '111'}
@@ -68,6 +68,12 @@ with open('nocomments.out', 'r+') as r:
                 # need to check if A instruction is a keyword to look up in table
                 if word in symbol_table:
                     word = symbol_table[word]
+                else:
+                    #counter starts at 16, we create a new key starting at 17
+                    start = 17
+                    symbol_table[word] = str(start)
+                    word = symbol_table[word]
+                    start += 1
 
                 number = int(word)
                 # get binary representation of A instruction
