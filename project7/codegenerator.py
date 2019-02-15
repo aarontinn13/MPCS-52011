@@ -116,20 +116,24 @@ with open('nocomments.out', 'r+') as r:
                     w.write('@SP\nA=M-1\nM=-M\n')
 
                 elif operator =='eq':
-                    pass
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JNE\n@SP\nA=M-1\n'
+                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)@SP\nA=M-1\nM=0(CONTINUE)\n')
 
                 elif operator == 'gt':
                     w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JLE\n@SP\nA=M-1\n'
-                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)@SP\nA=M-1\nM=0(CONTINUE\n')
+                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)@SP\nA=M-1\nM=0(CONTINUE)\n')
 
                 elif operator == 'lt':
-                    pass
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JGE\n@SP\nA=M-1\n'
+                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)@SP\nA=M-1\nM=0(CONTINUE)\n')
 
                 elif operator == 'and':
-                    pass
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M&D\n@SP\nA=M-1\nM=D')
 
                 elif operator == 'or':
-                    pass
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M|D\n@SP\nA=M-1\nM=D')
 
                 elif operator == 'not':
                     w.write('@SP\nA=M-1\nM=!M\n')
+        w.write('(INFINITELOOP)\n@INFINITELOOP\n0;JMP')
+
