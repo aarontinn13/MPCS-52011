@@ -168,10 +168,10 @@ with open('nocomments.out', 'r+') as r:
                             'M=-1\n@CONTINUE\n0;JMP\n(FALSE)\n@SP\nA=M-1\nM=0\n(CONTINUE)\n')
 
                 elif operator == 'and':
-                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M&D\n@SP\nA=M-1\nM=D\n')
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M&D\n')
 
                 elif operator == 'or':
-                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M|D\n@SP\nA=M-1\nM=D\n')
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M|D\n')
 
                 elif operator == 'not':
                     w.write('@SP\nA=M-1\nM=!M\n')
