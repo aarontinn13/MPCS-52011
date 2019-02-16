@@ -21,6 +21,9 @@ with open('nocomments.out', 'r+') as r:
     # create our asm code hack file
     with open('{}.asm'.format(name), 'w') as w:
 
+        #this is used to separate the jumps
+        count = 0
+
         #read the file
         for i in r.readlines():
 
@@ -156,16 +159,19 @@ with open('nocomments.out', 'r+') as r:
                     w.write('@SP\nA=M-1\nM=-M\n')
 
                 elif operator =='eq':
-                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JNE\n@SP\nA=M-1\n'
-                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)\n@SP\nA=M-1\nM=0\n(CONTINUE)\n')
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE{0}\nD;JNE\n@SP\nA=M-1\n'
+                            'M=-1\n@CONTINUE{0}\n0;JMP\n(FALSE{0})\n@SP\nA=M-1\nM=0\n(CONTINUE{0})\n'.format(count))
+                    count += 1
 
                 elif operator == 'gt':
-                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JLE\n@SP\nA=M-1\n'
-                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)\n@SP\nA=M-1\nM=0\n(CONTINUE)\n')
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE{0}\nD;JLE\n@SP\nA=M-1\n'
+                            'M=-1\n@CONTINUE{0}\n0;JMP\n(FALSE{0})\n@SP\nA=M-1\nM=0\n(CONTINUE{0})\n'.format(count))
+                    count += 1
 
                 elif operator == 'lt':
-                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE\nD;JGE\n@SP\nA=M-1\n'
-                            'M=-1\n@CONTINUE\n0;JMP\n(FALSE)\n@SP\nA=M-1\nM=0\n(CONTINUE)\n')
+                    w.write('@SP\nAM=M-1\nD=M\nA=A-1\nD=M-D\n@FALSE{0}\nD;JGE\n@SP\nA=M-1\n'
+                            'M=-1\n@CONTINUE{0}\n0;JMP\n(FALSE{0})\n@SP\nA=M-1\nM=0\n(CONTINUE{0})\n'.format(count))
+                    count += 1
 
                 elif operator == 'and':
                     w.write('@SP\nAM=M-1\nD=M\nA=A-1\nM=M&D\n')
