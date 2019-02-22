@@ -152,7 +152,7 @@ def handle_return():
     ninth = '@RET\nA=M\n0;JMP\n'
 
     # lol...
-    return first+second+third+fourth+fifth+sixth+seventh+eighth+ninth
+    return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
 
 def handle_function(name, args):
     '''handle declaring a function'''
@@ -203,19 +203,8 @@ def handle_call(name, args, call_counter):
     # lol...
     return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def handle_boot_strap():
+    '''handle boot strapping'''
+    #SP = 256
+    first = '@256\nD=A\n@SP\nM=D\n'
+    return first

@@ -21,9 +21,25 @@ def find_files(argument):
         name = name.partition(".")[0]
         return ([path], name)
 
+def check_boot_strap():
+    '''check if we need to bootstrap or not'''
 
-def translate(name):
+    #open nocomments.out
+    with open('nocomments.out', 'r') as r:
+        for i in r.readlines():
+
+            info = i.split()
+
+            #check if Sys.init function is in the file
+            if 'Sys.init' in info:
+                return info[2]
+
+        return False
+
+
+def translate(name, bootstrap):
     '''takes in the name of the new .asm file we are creating and we start the parse'''
+
     with open('nocomments.out', 'r') as r:
 
         with open('{}.asm'.format(name), 'w+') as w:
@@ -34,9 +50,11 @@ def translate(name):
             #handle call jumps separation
             call_counter = 0
 
-
-            #insert booth strap handler here!
-
+            if bootstrap:
+                x = handle_boot_strap()
+                w.write(x)
+                x = handle_call('Sys.init', bootstrap, call_counter)
+                w.write(x)
 
             #read the nocomments.out
             for i in r.readlines():
@@ -125,8 +143,11 @@ def main():
     for i in files:
         stripcomments(i)
 
+    #check if we need to bootstrap, will return either True or False
+    bootstrap = check_boot_strap()
+
     # parse through the nocomments.out file and start translating!
-    translate(name)
+    translate(name, bootstrap)
 
 
 if __name__ == '__main__':
