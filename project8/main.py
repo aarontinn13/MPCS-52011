@@ -120,10 +120,6 @@ def translate(name, bootstrap):
                     x = handle_function(name, args)
                     w.write(x)
 
-            #@@ May not need this!
-            w.write('(INFINITE_LOOP)\n@INFINITE_LOOP\n0;JMP')
-
-
 def main():
 
     # takes in last argument given from console

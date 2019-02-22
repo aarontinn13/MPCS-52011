@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd9a1f23-8441-4553-9ea5-5d308909d7f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/project8/BasicLoop.asm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project8/FibonacciSeries.asm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/project8/codegenerator.py" afterPath="$PROJECT_DIR$/project8/codegenerator.py" />
+      <change beforePath="$PROJECT_DIR$/project8/main.py" afterPath="$PROJECT_DIR$/project8/main.py" />
+      <change beforePath="$PROJECT_DIR$/project8/nocomments.out" afterPath="$PROJECT_DIR$/project8/nocomments.out" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project8/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+            <state relative-caret-position="178">
+              <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -26,21 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nocomments.out" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project8/nocomments.out">
+      <file leaf-file-name="codegenerator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="-111">
+              <caret line="133" column="33" lean-forward="false" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codegenerator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
+      <file leaf-file-name="StaticsTest.asm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project8/StaticsTest.asm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="26" />
+            <state relative-caret-position="1278">
+              <caret line="620" column="0" lean-forward="true" selection-start-line="620" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +109,6 @@
         <option value="$PROJECT_DIR$/project8/FunctionCalls/FibonacciElement/Sys.vm" />
         <option value="$PROJECT_DIR$/project8/FunctionCalls/NestedCall/Sys.vm" />
         <option value="$PROJECT_DIR$/project8/FunctionCalls/SimpleFunction/SimpleFunction.vm" />
-        <option value="$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Class1.vm" />
         <option value="$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Class2.vm" />
         <option value="$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Sys.vm" />
         <option value="$PROJECT_DIR$/project8/parser.py" />
@@ -117,16 +117,17 @@
         <option value="$PROJECT_DIR$/project8/understandingsimplefunction.txt" />
         <option value="$PROJECT_DIR$/project8/understanding_fibonacci_element.txt" />
         <option value="$PROJECT_DIR$/project8/messaround.py" />
-        <option value="$PROJECT_DIR$/project8/codegenerator.py" />
         <option value="$PROJECT_DIR$/project8/main.py" />
+        <option value="$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Class1.vm" />
+        <option value="$PROJECT_DIR$/project8/codegenerator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="361" />
+    <option name="x" value="49" />
     <option name="y" value="-4" />
     <option name="width" value="936" />
-    <option name="height" value="1076" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -193,6 +194,26 @@
               <item name="project8" type="462c0819:PsiDirectoryNode" />
               <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
               <item name="StaticsTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
+              <item name="project8" type="462c0819:PsiDirectoryNode" />
+              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
+              <item name="project8" type="462c0819:PsiDirectoryNode" />
+              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="BasicLoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
+              <item name="project8" type="462c0819:PsiDirectoryNode" />
+              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="FibonacciSeries" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,20 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project6/pongl.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="27490" column="0" lean-forward="false" selection-start-line="27490" selection-start-column="0" selection-end-line="27490" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/nocomments.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="112" column="3" lean-forward="true" selection-start-line="112" selection-start-column="3" selection-end-line="112" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project6/rect.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -636,30 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Class1.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project8/understanding_fibonacci_element.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project8/understandingsimplefunction.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/SimpleFunction/SimpleFunction.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -684,14 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/FibonacciElement/Main.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/FibonacciElement/Sys.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -700,28 +675,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
+    <entry file="file://$PROJECT_DIR$/project8/nocomments.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="173" column="26" lean-forward="false" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="26" />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/SimpleFunction.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/understandingsimplefunction.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/FibonacciElement/Main.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project8/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+        <state relative-caret-position="178">
+          <caret line="80" column="36" lean-forward="true" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/nocomments.out">
+    <entry file="file://$PROJECT_DIR$/project8/understanding_fibonacci_element.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="-2278">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/FunctionCalls/StaticsTest/Class1.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="133" column="33" lean-forward="false" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/StaticsTest.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="620" column="0" lean-forward="true" selection-start-line="620" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
           <folding />
         </state>
       </provider>

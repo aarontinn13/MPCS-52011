@@ -131,7 +131,7 @@ def handle_return():
     second = '@5\nA=D-A\nD=M\n@RET\nM=D\n'
 
     # *ARG = pop()
-    third = '@ARG\nD=M\n@0\nD=D+1\n@R13\nM=D\n@SP\nAM=M-1\nD=M\n@R13\nA=M\nM=D\n'
+    third = '@ARG\nD=M\n@0\nD=D+A\n@R13\nM=D\n@SP\nAM=M-1\nD=M\n@R13\nA=M\nM=D\n'
 
     # SP = ARG+1
     fourth = '@ARG\nD=M\n@SP\nM=D+1\n'
@@ -156,7 +156,7 @@ def handle_return():
 
 def handle_function(name, args):
     '''handle declaring a function'''
-    first = '{}\n'.format(name)
+    first = '({})\n'.format(name)
 
     #This function takes in no arguments
     if args == '0':
@@ -198,7 +198,7 @@ def handle_call(name, args, call_counter):
     eighth = '@{0}\n0;JMP\n'.format(name)
 
     # (return-address)
-    ninth = '(RETURN_ADDRESS{0})'.format(call_counter)
+    ninth = '(RETURN_ADDRESS{0})\n'.format(call_counter)
 
     # lol...
     return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
