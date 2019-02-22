@@ -1,7 +1,7 @@
 import sys
 import os
 from parser import stripcomments
-from project8.codegenerator import *
+from codegenerator import *
 
 def find_files(argument):
     '''given a directory path or name, will return the absolute path of the file(s)'''
@@ -77,7 +77,7 @@ def translate(name):
                     x = handle_goto(label)
                     w.write(x)
 
-    w.write('(INFINITE_LOOP)\n@INFINITE_LOOP\n0;JMP')
+            w.write('(INFINITE_LOOP)\n@INFINITE_LOOP\n0;JMP')
 
 
 def main():
@@ -101,8 +101,6 @@ def main():
 
     # parse through the nocomments.out file and start translating!
     translate(name)
-
-
 
 
 if __name__ == '__main__':
