@@ -122,3 +122,100 @@ def handle_if_goto(label):
 def handle_goto(label):
     return '@{0}\n0;JMP\n'.format(label)
 
+def handle_return():
+    '''return command'''
+    # FRAME = LCL
+    first = '@LCL\nD=M\n@FRAME\nM=D\n'
+
+    # RET = *(FRAME-5)
+    second = '@5\nA=D-A\nD=M\n@RET\nM=D\n'
+
+    # *ARG = pop()
+    third = '@ARG\nD=M\n@0\nD=D+1\n@R13\nM=D\n@SP\nAM=M-1\nD=M\n@R13\nA=M\nM=D\n'
+
+    # SP = ARG+1
+    fourth = '@ARG\nD=M\n@SP\nM=D+1\n'
+
+    # THAT = *(FRAME - 1)
+    fifth = '@FRAME\nD=M-1\nAM=D\nD=M\n@THAT\nM=D\n'
+
+    # THIS = *(FRAME - 2)
+    sixth = '@FRAME\nD=M-1\nAM=D\nD=M\n@THIS\nM=D\n'
+
+    # ARG = *(FRAME - 3)
+    seventh = '@FRAME\nD=M-1\nAM=D\nD=M\n@ARG\nM=D\n'
+
+    # LCL = *(FRAME - 4)
+    eighth = '@FRAME\nD=M-1\nAM=D\nD=M\n@LCL\nM=D\n'
+
+    # goto RET
+    ninth = '@RET\nA=M\n0;JMP\n'
+
+    # lol...
+    return first+second+third+fourth+fifth+sixth+seventh+eighth+ninth
+
+def handle_function(name, args):
+    '''handle declaring a function'''
+    first = '{}\n'.format(name)
+
+    #This function takes in no arguments
+    if args == '0':
+        return first
+    else:
+        second = ''
+
+        #Push constant 0
+        command = '@0\nD=A\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'
+        for i in range(int(args)):
+            second += command
+        return first+second
+
+
+def handle_call(name, args, call_counter):
+    '''handle calling a function'''
+    # push return-address
+    first = '@RETURN_ADDRESS{0}\nD=A\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'.format(call_counter)
+
+    # push LCL
+    second = '@LCL\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'
+
+    # push ARG
+    third = '@ARG\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'
+
+    # push THIS
+    fourth = '@THIS\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'
+
+    # push THAT
+    fifth = '@THAT\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'
+
+    # ARG = SP-n-5
+    sixth = '@SP\nD=M\n@5\nD=D-A\n@{0}\nD=D-A\n@ARG\nM=D\n'.format(args)
+
+    # LCL = SP
+    seventh = '@SP\nD=M\n@LCL\nM=D\n'
+
+    # goto f
+    eighth = '@{0}\n0;JMP\n'.format(name)
+
+    # (return-address)
+    ninth = '(RETURN_ADDRESS{0})'.format(call_counter)
+
+    # lol...
+    return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

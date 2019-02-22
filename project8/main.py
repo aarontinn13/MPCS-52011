@@ -29,7 +29,14 @@ def translate(name):
         with open('{}.asm'.format(name), 'w+') as w:
 
             #handle ops jumps separation
-            count = 0
+            ops_counter = 0
+
+            #handle call jumps separation
+            call_counter = 0
+
+
+            #insert booth strap handler here!
+
 
             #read the nocomments.out
             for i in r.readlines():
@@ -41,14 +48,16 @@ def translate(name):
 
                     #handle return
                     if info[0] == 'return':
-                        #handle return
-                        pass
+                        x = handle_return()
+                        w.write(x)
 
                     #handle operation
                     else:
-                        x = handle_ops(info, count)
+                        x = handle_ops(info, ops_counter)
                         w.write(x[0])
-                        count = x[1]
+
+                        #change ops_counter to this new value
+                        ops_counter = x[1]
 
                 #handle push
                 elif 'push' in info:
@@ -72,17 +81,34 @@ def translate(name):
                     x = handle_if_goto(label)
                     w.write(x)
 
+                #handle goto
                 elif 'goto' in info:
                     label = info[1]
                     x = handle_goto(label)
                     w.write(x)
 
+                elif 'call' in info:
+                    call_counter += 1
+                    name = info[1]
+                    args = info[2]
+
+                    x = handle_call(name, args, call_counter)
+                    w.write(x)
+
+                elif 'function' in info:
+                    name = info[1]
+                    args = info[2]
+
+                    x = handle_function(name, args)
+                    w.write(x)
+
+            #@@ May not need this!
             w.write('(INFINITE_LOOP)\n@INFINITE_LOOP\n0;JMP')
 
 
 def main():
 
-    # takes in last argument
+    # takes in last argument given from console
     argument = sys.argv[-1]
 
     # get the file path or list of files we need, also return the name we will call our .asm file
@@ -92,7 +118,7 @@ def main():
 
     # create the nocomments.out file we will use to parse through,
     # each time we run the algorithm, it will erase and create a blank
-    # nocomments.out file.
+    # nocomments.out file so we can run multiple times
     open('nocomments.out', 'w+').close()
 
     # open the file(s) and start writing into nocomments.out

@@ -1,0 +1,248 @@
+//bootstrap?
+@256
+D=A
+@SP
+M=D
+
+//push return address
+@RETURN_LABEL0
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push local
+@LCL
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push ARG
+@ARG
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push THIS
+@THIS
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push THAT
+@THAT
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+// arg = SP-n-5
+@SP     //get what pointer is pointing to
+D=M
+@5
+D=D-A   //subtract 5 from this value
+@0
+D=D-A   //subtract number of arguments we are calling function with (this case zero?)
+@ARG
+M=D     //set arg to this
+
+// LCL = SP
+@SP
+D=M
+@LCL    //set LCL to stack pointer
+M=D
+
+// goto f
+@Sys.init   //transfer control
+0;JMP
+(RETURN_LABEL0)     //declare a label for the return-address
+
+
+
+
+
+
+
+/*This is where the function starts?*/
+//We push constant 0 twice because two variables
+(SimpleFunction.test)
+
+//push constant 0
+@0
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push constant 0
+@0
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+
+
+
+
+//push local 0
+@LCL
+D=M
+@0
+A=D+A
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//push local 1
+@LCL
+D=M
+@1
+A=D+A
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M+D
+
+//not
+@SP
+A=M-1
+M=!M
+
+//push argument 0
+@ARG
+D=M
+@0
+A=D+A
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M+D
+
+//push argument 1
+@ARG
+D=M
+@1
+A=D+A
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+//sub
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M-D
+
+/*return*/
+
+//frame = LCL?
+@LCL
+D=M
+@R11 //R11 is FRAME?
+M=D
+
+@5
+A=D-A //LCL - 5?
+D=M
+@R12
+M=D //put return address in a temporary variable
+
+//arg = pop()
+@ARG
+D=M     //get what is in ARG
+@0
+D=D+A   //take this and add 0 to it
+@R13
+M=D     //store this in R13
+@SP
+AM=M-1  //decrement and dereference the SP
+D=M     //get what is on top of the stack
+@R13
+A=M     //get the address of what is at R13
+M=D     //change this address to what is on the stack
+
+//SP = ARG+1?
+@ARG
+D=M     //get what is in ARG
+@SP
+M=D+1   //change the SP to what was in ARG + 1
+
+//THAT = *(FRAME-1)
+@R11
+D=M-1   //get what is in [R11 - 1]
+AM=D    //set [R11-1] to what [R11-1] was pointing to
+D=M     //get what was at this address
+@THAT
+M=D     //set THAT to this
+
+//THIS = *(FRAME-2)
+@R11
+D=M-1
+AM=D
+D=M
+@THIS
+M=D
+
+//ARG = *(FRAME-3)
+@R11
+D=M-1
+AM=D
+D=M
+@ARG
+M=D
+
+//LCL = *(FRAME-4)
+@R11
+D=M-1
+AM=D
+D=M
+@LCL
+M=D
+
+//goto RET
+@R12
+A=M
+0;JMP
