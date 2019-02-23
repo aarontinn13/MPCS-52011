@@ -28,6 +28,7 @@ def handle_push(text, name):
     # handle static
     elif memory == 'static':
         # get the value from filename.value
+        name = name.partition('.')[0]
         return '@{}.{}\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n'.format(name, value)
 
     # handle temp
@@ -62,6 +63,7 @@ def handle_pop(text, name):
 
     # handle static (already know static address)
     elif memory == 'static':
+        name = name.partition('.')[0]
         return '@SP\nAM=M-1\nD=M\n@{}.{}\nM=D\n'.format(name, value)
 
     # handle temp (already know where temp is)
