@@ -1,10 +1,9 @@
-Grammar = {'keyword': ['class', 'constructor', 'function', 'method', 'field', 'static',
-                       'var', 'int', 'char', 'boolean', 'void', 'true', 'false', 'null',
-                       'this', 'let', 'do','if','else','while','return'],
-           'symbol': ['{','}','(',')','[',']','.',',',';','+','-','*','/','&','|','<',
-                      '>','=','~']}
+import re
+
+word = 'Keyboard.readInt("HOW MANY NUMBERS?'
 
 
+words = [s for s in re.split(r"(\W)", word) if s != '']
 
-for key, value in Grammar.items():
-    print(key, value)
+
+print(words)

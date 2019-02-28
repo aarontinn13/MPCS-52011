@@ -2,6 +2,7 @@ import sys
 import os
 from commentstripper import stripcomments
 from tokenizer import tokenize
+from parser import parse
 
 def find_files(argument):
     '''given a directory path or name, will return the absolute path of the file(s)'''
@@ -42,8 +43,9 @@ def main():
         name = i.split('/')[-1]
         name = name.partition(".")[0]
 
-        #tokenize!
+        #tokenize to create the <name>T.xml file
         tokenize(name)
+        #parse(name)
 
 
 if __name__ == '__main__':

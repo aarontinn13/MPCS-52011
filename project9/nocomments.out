@@ -1,46 +1,24 @@
-class SquareGame {
-field Square square; 
-field int direction; 
-constructor SquareGame new() {
-let square = Square.new(0, 0, 30);
-let direction = 0; 
-return this;
+class Main {
+function void main() {
+var Array a;
+var int length;
+var int i, sum;
+let length = Keyboard.readInt("HOW MANY NUMBERS? ");
+let a = Array.new(length);
+let i = 0;
+while (i < length) {
+let a[i] = Keyboard.readInt("ENTER THE NEXT NUMBER: ");
+let i = i + 1;
 }
-method void dispose() {
-do square.dispose();
-do Memory.deAlloc(this);
-return;
+let i = 0;
+let sum = 0;
+while (i < length) {
+let sum = sum + a[i];
+let i = i + 1;
 }
-method void moveSquare() {
-if (direction = 1) { do square.moveUp(); }
-if (direction = 2) { do square.moveDown(); }
-if (direction = 3) { do square.moveLeft(); }
-if (direction = 4) { do square.moveRight(); }
-do Sys.wait(5); 
-return;
-}
-method void run() {
-var char key; 
-var boolean exit;
-let exit = false;
-
-while (~exit) {
-while (key = 0) {
-let key = Keyboard.keyPressed();
-do moveSquare();
-}
-if (key = 81) { let exit = true; } 
-if (key = 90) { do square.decSize(); } 
-if (key = 88) { do square.incSize(); } 
-if (key = 131) { let direction = 1; } 
-if (key = 133) { let direction = 2; } 
-if (key = 130) { let direction = 3; } 
-if (key = 132) { let direction = 4; } 
-while (~(key = 0)) {
-let key = Keyboard.keyPressed();
-do moveSquare();
-}
-} 
+do Output.printString("THE AVERAGE IS: ");
+do Output.printInt(sum / length);
+do Output.println();
 return;
 }
 }
