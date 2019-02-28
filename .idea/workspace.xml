@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd9a1f23-8441-4553-9ea5-5d308909d7f1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/project8/UnderstandStaticsTest1.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/project8/UndestandStaticsTest2.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ArrayTest/Main.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ArrayTest/Main.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ArrayTest/MainT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/Main.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/Main.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/MainT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/Square.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/Square.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/SquareGame.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/SquareGame.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/SquareGameT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/ExpressionLessSquare/SquareT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/Main.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/Main.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/MainT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/Square.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/Square.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/SquareGame.jack" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/SquareGame.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/SquareGameT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/Square/SquareT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/commentstripper.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/main.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/messaround.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/parser.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/project9/tokenizer.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/project8/StaticsTest.asm" afterPath="$PROJECT_DIR$/project8/StaticsTest.asm" />
-      <change beforePath="$PROJECT_DIR$/project8/codegenerator.py" afterPath="$PROJECT_DIR$/project8/codegenerator.py" />
-      <change beforePath="$PROJECT_DIR$/project8/nocomments.out" afterPath="$PROJECT_DIR$/project8/nocomments.out" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,34 +39,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project8/main.py">
+      <file leaf-file-name="tokenizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project9/tokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="144" column="66" lean-forward="false" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messaround.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project9/messaround.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project9/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="773">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codegenerator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaticsTest.asm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project8/StaticsTest.asm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="230" column="1" lean-forward="false" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,11 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project00/main.py" />
-        <option value="$PROJECT_DIR$/project00/src/write.out" />
-        <option value="$PROJECT_DIR$/project00/src/test.txt" />
-        <option value="$PROJECT_DIR$/project00/src/main.py" />
-        <option value="$PROJECT_DIR$/project00/src/test.py" />
         <option value="$PROJECT_DIR$/project00/src/test.out" />
         <option value="$PROJECT_DIR$/project00/src/test.in" />
         <option value="$PROJECT_DIR$/project00/src/main2.py" />
@@ -125,11 +141,16 @@
         <option value="$PROJECT_DIR$/project8/UnderstandStaticsTest1.txt" />
         <option value="$PROJECT_DIR$/project8/codegenerator.py" />
         <option value="$PROJECT_DIR$/project8/main.py" />
+        <option value="$PROJECT_DIR$/project9/commentstriper.py" />
+        <option value="$PROJECT_DIR$/project9/messaround.py" />
+        <option value="$PROJECT_DIR$/project9/ArrayTest/Main.jack" />
+        <option value="$PROJECT_DIR$/project9/tokenizer.py" />
+        <option value="$PROJECT_DIR$/project9/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="876" />
+    <option name="x" value="49" />
     <option name="y" value="-4" />
     <option name="width" value="936" />
     <option name="height" value="1084" />
@@ -149,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,71 +180,36 @@
             <path>
               <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
               <item name="project8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
+              <item name="project9" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
-              <item name="FibonacciElement" type="462c0819:PsiDirectoryNode" />
+              <item name="project9" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
-              <item name="NestedCall" type="462c0819:PsiDirectoryNode" />
+              <item name="project9" type="462c0819:PsiDirectoryNode" />
+              <item name="ExpressionLessSquare" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleFunction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
-              <item name="StaticsTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicLoop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPCS-52011" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MPCS-52011" type="462c0819:PsiDirectoryNode" />
-              <item name="project8" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="FibonacciSeries" type="462c0819:PsiDirectoryNode" />
+              <item name="project9" type="462c0819:PsiDirectoryNode" />
+              <item name="Square" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -234,6 +219,9 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/infinity/Desktop/MPCS-52011/project7/codegenerator.py" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project9" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project00/src" />
     </key>
@@ -250,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.messaround (1)">
+  <component name="RunManager" selected="Python.messaround (2)">
     <configuration name="assembler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,6 +293,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="messaround (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MPCS-52011" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project9/messaround.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="messaround" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,38 +329,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project00/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MPCS-52011" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project00/src/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.messaround" />
-      <item index="3" class="java.lang.String" itemvalue="Python.assembler" />
-      <item index="4" class="java.lang.String" itemvalue="Python.messaround (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.messaround" />
+      <item index="2" class="java.lang.String" itemvalue="Python.assembler" />
+      <item index="3" class="java.lang.String" itemvalue="Python.messaround (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.messaround (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.messaround (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.messaround" />
-        <item index="2" class="java.lang.String" itemvalue="Python.assembler" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.messaround (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.messaround (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.messaround" />
+        <item index="3" class="java.lang.String" itemvalue="Python.assembler" />
+        <item index="4" class="java.lang.String" itemvalue="Python.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -378,12 +366,12 @@
     <frame x="49" y="-4" width="1871" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17744522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1758418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28327098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25280598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -405,107 +393,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project6/add.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/add.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/pong.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="345" column="2" lean-forward="true" selection-start-line="345" selection-start-column="2" selection-end-line="345" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/max.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/max.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/maxl.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/maxl.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/pong.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="27483" column="0" lean-forward="true" selection-start-line="27483" selection-start-column="0" selection-end-line="27483" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/pongl.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457281">
-          <caret line="534" column="11" lean-forward="true" selection-start-line="534" selection-start-column="11" selection-end-line="534" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/rect.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/rectl.hack">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project6/comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project7/test.asm" />
-    <entry file="file://$PROJECT_DIR$/project7/test.vm" />
-    <entry file="file://$PROJECT_DIR$/project7/pointertest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project7/simpleadd.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project7/nocomments.out" />
     <entry file="file://$PROJECT_DIR$/project7/basictest.asm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -591,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project6/assembler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="824">
@@ -623,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="19" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,49 +580,191 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project8/UnderstandStaticsTest1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
+        <state relative-caret-position="17">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/main.py">
+    <entry file="file://$PROJECT_DIR$/project8/StaticsTest.asm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="144" column="66" lean-forward="false" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project8/codegenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+        <state relative-caret-position="5457">
+          <caret line="321" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project8/UndestandStaticsTest2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="17">
+          <caret line="325" column="3" lean-forward="false" selection-start-line="325" selection-start-column="3" selection-end-line="325" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project8/StaticsTest.asm">
+    <entry file="file://$PROJECT_DIR$/project9/Square/Main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="230" column="1" lean-forward="false" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="7" />
+        <state relative-caret-position="221">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ExpressionLessSquare/Main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ArrayTest/Main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/commentstripper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project8/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2192">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ExpressionLessSquare/Main.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ExpressionLessSquare/Square.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-834">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/Square/SquareGame.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/Square/Square.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1021">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ArrayTest/MainT.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/Square/MainT.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1318">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/Square/Main.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ExpressionLessSquare/SquareGameT.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3613">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/ArrayTest/Main.jack">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/messaround.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project9/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
