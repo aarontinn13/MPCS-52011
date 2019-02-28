@@ -9,7 +9,7 @@ def stripcomments(path):
                 found = False
 
                 #remove all blank lines
-                if i == '\n':
+                if i == '\n' or i == '\t\n':
                     continue
 
                 #remove all white space from the line

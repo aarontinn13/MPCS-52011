@@ -37,7 +37,7 @@ def tokenize(name):
                             split_word = word.partition('\"')
                             word = split_word[2]
                             quote.append("{}".format(split_word[0]))
-                            w.write('<{key}> {i} </{key}>\n'.format(key='StringConstant', i=''.join(quote)))
+                            w.write('<{key}> {i} </{key}>\n'.format(key='stringConstant', i=''.join(quote)))
 
                         elif not flag:
                             #turn on flag status
@@ -51,21 +51,31 @@ def tokenize(name):
 
                     for i in words:
 
-                        if i == '':
+                        skip = False
+
+                        for key, value in Grammar.items():
+
+                            if i in value:
+                                #keyword or symbol
+                                if i == '<':
+                                    i = '&lt;'
+                                if i == '>':
+                                    i = '&gt;'
+                                if i == '&':
+                                    i = '&amp;'
+
+                                w.write('<{key}> {i} </{key}>\n'.format(key=key, i=i))
+                                skip = True
+
+                        if skip:
                             continue
 
-                        for key in Grammar:
+                        if i.isdigit():
+                            #integer constant
+                            w.write('<{key}> {i} </{key}>\n'.format(key='integerConstant', i=i))
 
-                            if i in Grammar[key]:
-                                #keyword or symbol
-                                w.write('<{key}> {i} </{key}>\n'.format(key=key, i=i))
+                        else:
+                            #identifier
+                            w.write('<{key}> {i} </{key}>\n'.format(key='identifier', i=i))
 
-
-                            elif i.isdigit():
-                                #integer constant
-                                w.write('<{key}> {i} </{key}>\n'.format(key='integerConstant', i=i))
-
-
-                            else:
-                                #identifier
-                                w.write('<{key}> {i} </{key}>\n'.format(key='identifier', i=i))
+            w.write('</tokens>\n')
