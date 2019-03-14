@@ -45,7 +45,9 @@ def main():
 
         #tokenize to create the <name>T.xml file
         tokenize(name)
-        #parse(name)
+
+        #parse the file and generate the <name.xml
+        parse(name)
 
 
 if __name__ == '__main__':
