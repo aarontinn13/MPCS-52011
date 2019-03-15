@@ -47,7 +47,7 @@ def main():
         tokenize(name)
 
         #parse the file and generate the <name.xml
-        parse(name)
+        #parse(name)
 
 
 if __name__ == '__main__':

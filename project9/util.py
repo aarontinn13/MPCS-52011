@@ -1,7 +1,23 @@
 def Class(tup):
 
-    if tup[1] == '{':
-        return 'subroutineDec'
+    if tup[1] == 'function':
+        return 'function'
+
+    if tup[1] == 'constructor':
+        return 'constructor'
+
+    if tup[1] == 'static':
+        return 'static'
+
+    if tup[1] == 'field':
+        return 'field'
+    else:
+        return None
+
+def classVarDec(tup):
+    if tup[1] == ';':
+        return ';'
+
     else:
         return None
 
@@ -19,16 +35,16 @@ def subroutineDec(tup):
 def parameterList(tup):
 
     if tup[1] == ')':
-        return 'pop'
+        return ')'
     else:
         return None
 
 def subroutineBody(tup):
-    if tup[1] == 'varDec':
-        return 'var'
+    if tup[1] == 'var':
+        return 'varDec'
 
     if tup[1] == 'let':
-        return 'letStatements'
+        return 'letStatement'
 
     else:
         return None
@@ -48,6 +64,8 @@ def statements(tup):
         return 'doStatement'
     if tup[1] == 'return':
         return 'returnStatement'
+    if tup[1] == '}':
+        return '}'
     else:
         return None
 
@@ -95,8 +113,7 @@ def expression(tup):
     if tup[0] == 'integerConstant':
         return 'integerConstant'
 
-    if any(x == tup[1] for x in ['+','-','*', '/']):
-        return tup[1]
+
 
     if tup[1] == ')':
         return ')'
@@ -116,8 +133,14 @@ def term(tup):
     if tup[1] == ';':
         return ';'
 
+    if any(x == tup[1] for x in ['+','-','*', '/', '&lt;', '&gt;']):
+        return 'symbol'
+
     if tup[1] == '[':
         return '['
+
+    if tup[1] == ']':
+        return ']'
 
     else:
         return None
@@ -127,13 +150,13 @@ def expressionList(tup):
         return 'identifier'
 
     if tup[0] == 'stringConstant':
-        return 'StringConstant'
+        return 'stringConstant'
 
     if tup[0] == 'integerConstant':
         return 'integerConstant'
 
-    if any(x == tup[1] for x in ['+', '-', '*', '/']):
-        return tup[1]
+    if any(x == tup[1] for x in ['+','-','*', '/', '&lt;', '&gt;']):
+        return 'symbol'
 
     if tup[1] == ')':
         return ')'
